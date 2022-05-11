@@ -29,6 +29,7 @@ const useInfiniteScroll = (
             ? categories.includes(selectedCategory)
             : true,
       ),
+
     [selectedCategory],
   )
 
