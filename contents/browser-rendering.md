@@ -1,5 +1,5 @@
 ---
-date: '2020-07-29'
+date: '2020-08-23'
 title: '브라우저 렌더링 과정'
 categories: ['WEB']
 summary: '브라우저 렌더링 과정'
