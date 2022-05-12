@@ -3,7 +3,7 @@ module.exports = {
     title: `주니어 개발자가 되고싶은 자의 블로그`,
     description: `개발 공부를 시작하며 배운것들을 적어보려고 합니다`,
     author: `Shin`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `shingithubiomaster.gatsbyjs.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: '<https://my-website.com/>',
+        siteUrl: 'shingithubiomaster.gatsbyjs.io',
         stripQueryString: true,
       },
     },
