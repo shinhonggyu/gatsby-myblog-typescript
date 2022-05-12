@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `주니어 개발자가 되고싶은 자의 블로그`,
+    title: `개발자를 꿈꾸는 자의 블로그`,
     description: `개발 공부를 시작하며 배운것들을 적어보려고 합니다`,
     author: `Shin`,
     siteUrl: `https://shingithubiomaster.gatsbyjs.io/`,
