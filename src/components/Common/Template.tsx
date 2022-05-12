@@ -52,6 +52,10 @@ const Template: FunctionComponent<TemplateProps> = ({
           name="google-site-verification"
           content="M5D4JBqBviVniG82arX_YHCZ68mUj4_JU1FAsiCfA9o"
         />
+        <meta
+          name="naver-site-verification"
+          content="d9d280c67d69b3e65b329d468e5d3c667aaa3afa"
+        />
 
         <html lang="ko" />
       </Helmet>
