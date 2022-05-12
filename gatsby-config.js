@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `주니어 개발자가 되고싶은 자의 블로그`,
+    description: `개발 공부를 시작하며 배운것들을 적어보려고 합니다`,
+    author: `Shin`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -13,6 +13,20 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: '<https://my-website.com/>',
+        stripQueryString: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
