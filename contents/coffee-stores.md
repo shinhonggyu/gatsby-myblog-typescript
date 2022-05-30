@@ -1,33 +1,23 @@
 ---
-date: '2022-07-29'
-title: '주변 카페 찾기'
-categories: ['Web', 'SEO', 'Next.js', 'SSG', 'CSR', 'API']
-summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
-thumbnail: './test.jpg'
+date: '2022-05-30'
+title: '내주변 카페 찾기'
+categories: ['Web', 'SEO', 'Next.js', 'SSG', 'CSR', 'API', 'Airtable']
+summary: '내 주변 커피집을 찾을수있는 웹.'
+thumbnail: './coffee-stores.png'
 ---
 
-FOURSQUARE_API
+첫번째 페이지의 상점들은 getStaticProps로 정적 페이지 입니다.
 
-UNSPLASH_API_LIBRARY
+버튼을 클릭할경우 geolocation api 로 사용자의 위치 정보를 가져온다음
 
-DB는 AIRTABLE LIBRARY
+FOURSQUARE_API 로 내주변의 상점을 useEffect를 활용해 클라이언트 사이드 렌더링을 합니다.
 
-### 1. Help Google Bot to Find My Contents
+가져온 상점들은 context로 글로벌 상태로 저장합니다.
 
-구글에 SiteMap을 제출하여 사이트에 있는 파일로서 새 페이지나 변경된 페이지가 있을 때 이를 검색 엔진에 알려주도록 할 수 있다.
+각 상점 페이지에서는 미리 getStaticPaths로 빌드시 pre-render 된 상점은 바로 DB에 저장하고
 
-SiteMap은 사이트에 있는 페이지, 동영상 및 기타 파일과 각 관계에 관한 정보를 제공하는 파일로, 검색 엔진은 이를 읽고 사이트를 더 지능적으로 크롤링 할 수 있게 된다.
+이외에는 useEffect로 클라이언트 context에서 id가 일치하는 상점을 가져와 렌더링한 후 Airtable DB에 저장합니다.
 
-### 2. Use 'Robots.txt' File
+그리곤 useSwr 훅 으로 상점을 가져와 DB와 동기적으로 클라이언트 사이드 렌더링을 합니다.
 
-Robots.txt 파일은 검색 엔진에 어떤 페이지를 크롤링해도 되는지 알리는 파일로, 서버의 루트 디렉토리에 있어야 한다.
-
-과도한 Robots.txt 파일은 더 많은 방문자를 유도할 수 있는 정상적인 검색 엔진 크롤러의 접근을 막을 가능성이 있기 때문에 적절하게 설정해야 한다.
-
----
-
-## Source
-
-- SEO 기본 가이드
-
-  [<https://support.google.com/webmasters/answer/7451184?hl=ko&ref_topic=9460495>](https://support.google.com/webmasters/answer/7451184?hl=ko&ref_topic=9460495)
+upVote 버튼으로 좋아요를 누를수있고 db와 동기화됩니다.
