@@ -1,7 +1,7 @@
 ---
 date: '2022-05-28'
 title: 'What is Static Site Generation?'
-categories: ['SSG']
+categories: ['SSG', 'ISR', 'SSR', 'CSR']
 summary: 'How Next.js Uses SSG for Dynamic Web Apps'
 thumbnail: './SSG.png'
 ---
