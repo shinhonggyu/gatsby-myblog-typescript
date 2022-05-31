@@ -6,9 +6,6 @@ summary: '브라우저 렌더링 과정'
 thumbnail: './macbook.jpg'
 ---
 
-나도 다른 사람들처럼
-url에 google.com을 입력했을때 일어나는 일이 무었인지 알아보았다.
-
 1. HTML파일 과 CSS파일을 파싱해서 DOM Tree와 CSSOM Tree를 만든다.
 
 2. 두 Tree를 결합하여 Render Tree를 만든다.
