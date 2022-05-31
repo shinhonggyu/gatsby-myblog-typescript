@@ -1,5 +1,5 @@
 ---
-date: '2022-05-30'
+date: '2022-05-31'
 title: '내주변 카페 찾기'
 categories: ['Web', 'SEO', 'Next.js', 'SSG', 'CSR', 'API', 'Airtable']
 summary: '내 주변 커피집을 찾을수있는 웹.'
